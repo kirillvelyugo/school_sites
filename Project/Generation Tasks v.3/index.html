@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор комбинаторных задач</title>
+
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header__container _container">
+                <a href="#" class="header__logo">
+                    Генератор задач
+                </a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main__container _container">
+                <div class="main__body">
+                    <div class="main__title">
+                        Онлайн генератор Комбинаторных задач
+                    </div>
+                    <div class="main__text">
+                        Генератор поможет в подготовке
+                        к 8 заданию ЕГЭ
+                    </div>
+                    <div class="main__button">
+                        <a href="#" class="button main__button_blue">Сгенерировать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="test">
+            <div class="test__container _container">
+                <div class="test__body">
+                    <div class="test__text">
+                    Все 4-буквенные слова, составленные из букв К, Л, Р, Т, записаны в алфавитном порядке и пронумерованы. Вот начало списка:<br>
+                    1. КККК<br>
+                    2. КККЛ<br>
+                    3. КККР<br>
+                    4. КККТ<br>
+                    ……<br>
+                    Запишите слово, которое стоит на 67-м месте от начала списка. 
+    
+                    </div>
+                    <form class="test__form form">
+                        <label>
+                            Количетсво задач:
+                            <input type="number" class="form__input" name="count" id="input">    
+                        </label>
+                        <label>
+                            Выбрать этот тип: 
+                            <input type="checkbox" id="choose" name="3">
+                        </label>
+                        <br>
+                        <button class="form__button" id="button">Сгенерировать</button>
+                    </form>    
+                </div>  
+                
+            </div>
+        </div>
+
+
+    </div>
+
+    <script type="text/javascript" src="./script/test.js">.</script>
+</body>
+
+</html>
