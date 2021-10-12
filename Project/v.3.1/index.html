@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор задач</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/materialize.css">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header__container container">
+                <div class="header__row row">
+                    <div class="col s12 m12 l8 xl8">
+                        <a href="#" class="header__logo">
+                            Генератор задач
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="intro">
+            <div class="intro__container container">
+                <div class="intro__row row">
+                    <div class="col s12 m12 l12 xl10">
+                        <div class="intro__title">
+                            <!-- add <h1> -->
+                            Онлайн генератор
+                            Комбинаторных задач
+                        </div>
+                        <div class="intro__subtitle">
+                            Генератор поможет в подготовке
+                            к 8 заданию ЕГЭ
+                        </div>
+                        <div class="intro__button">
+                            <a href="#" class="intro__button_blue">
+                                Сгенерировать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="main__container container">
+                <div class="main__row row">
+                    <div class="main__tabs col s12 m12 l12 xl12">
+                        <ul class="tabs">
+                            <li class="tab col s4">
+                                <a class="active" href="#1-type">
+                                    1 ТИП
+                                </a>
+                            </li>
+                            <li class="tab col s4">
+                                <a href="#2-type">
+                                    2 ТИП
+                                </a>
+                            </li>
+                            <li class="tab col s4">
+                                <a href="#3-type">
+                                    3 ТИП
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="1-type" class="main__tab col s12 m12 l12 xl12">
+                        <div class="row">
+                            <div class="main__task task col s6 m6 l6 xl6">
+                                <div class="task__table table">
+                                    <div class="table__text">
+                                        Все 4-буквенные слова, составленные из букв К, Л, Р, Т, записаны в алфавитном
+                                        порядке и пронумерованы. Вот начало списка: <br>
+                                        1. КККК <br>
+                                        2. КККЛ <br>
+                                        3. КККР <br>
+                                        4. КККТ <br>
+                                        …… <br>
+                                        Запишите слово, которое стоит на 67-м месте от начала списка.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__form form col s6 m6 l6 xl6">
+                                <form>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="2-type" class="main__task col s12 m12 l12 xl12">
+                        <div class="row">
+                            <div class="main__text task col s6 m6 l6 xl6">
+
+                            </div>
+                            <div class="main__form col s6 m6 l6 xl6">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="3-type" class="main__tab col s12 m12 l12 xl12">
+                        <div class="row">
+                            <div class="main__task task col s6 m6 l6 xl6">
+
+                            </div>
+                            <div class="main__form col s6 m6 l6 xl6">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="print-block">
+            <div class="print-block__container container">
+                <div class="print-block__row row">
+                    <div class="print-block__type">
+                        <div class="print-block__title">
+                            Первый тип:
+                        </div>
+                        <div class="col s12 m6 l6 xl4">
+                            <div class="print-block__text">
+                                Все 4-буквенные слова, составленные из букв К, Л, Р, Т, записаны в алфавитном
+                                порядке и пронумерованы. Вот начало списка: <br>
+                                1. КККК <br>
+                                2. КККЛ <br>
+                                3. КККР <br>
+                                4. КККТ <br>
+                                …… <br>
+                                Запишите слово, которое стоит на 67-м месте от начала списка.
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l6 xl4">
+                            <div class="print-block__text">
+                                Все 4-буквенные слова, составленные из букв К, Л, Р, Т, записаны в алфавитном
+                                порядке и пронумерованы. Вот начало списка: <br>
+                                1. КККК <br>
+                                2. КККЛ <br>
+                                3. КККР <br>
+                                4. КККТ <br>
+                                …… <br>
+                                Запишите слово, которое стоит на 67-м месте от начала списка.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script/materialize.js"></script>
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
