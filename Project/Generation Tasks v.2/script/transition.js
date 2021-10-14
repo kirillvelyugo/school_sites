@@ -40,3 +40,4 @@ document.getElementById('titleResult').addEventListener('click', event => {
     document.getElementById('introPage').classList.remove('hide');
 })
 
+
