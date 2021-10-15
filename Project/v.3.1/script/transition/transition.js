@@ -3,6 +3,10 @@ function transition__intro_main() {
 
     document.querySelector('.intro').classList.add('intro_hide')
     document.querySelector('.main').classList.add('main_show')
+    setTimeout(() => {
+        let el = document.querySelector(".tabs")
+        let instance = M.Tabs.init(el)
+    }, 100)
 }
 function transition__main_print_block() {
     console.log('main --> print-block')

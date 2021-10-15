@@ -16,8 +16,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             console.log('ok')
             generate()
             transition__main_print_block()
-        }
-        else {
+        } else {
             console.log('Task not choose')
         }
     })
