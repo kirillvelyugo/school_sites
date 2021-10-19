@@ -20,4 +20,8 @@ function transition__to_intro() {
     document.querySelector('.intro').classList.remove('intro_hide')
     document.querySelector('.main').classList.remove('main_show')
     document.querySelector('.print-block').classList.remove('print-block_show')
+
+    document.getElementById('type_1_insert').innerHTML = ""
+    document.getElementById('type_2_insert').innerHTML = ""
+    document.getElementById('type_3_insert').innerHTML = ""
 }

@@ -7,14 +7,12 @@ body {
     min-height: 100%;
 }
 /* HEADER =================================================================== */
-.header__container {
-    padding: 30px 0;
+.header {   
+    width: 100%;
     background: rgb(231, 231, 231);
 }
-.header {
-    position: absolute;
-    width: 100%;
-    z-index: 99;
+.header__container {
+    padding: 30px 0;
 }
 .header__logo {
     font-size: 40px;
@@ -23,6 +21,9 @@ body {
 }
 .header__row {
     background: rgb(231, 231, 231);
+}
+.header .row {
+    margin-bottom: 0 !important;
 }
 @media (max-width: 475px){
     .header__logo {
@@ -37,17 +38,10 @@ body {
 
 /* INTRO ==================================================================== */
 .intro {
-    padding: 250px 0 200px 0;
-
-    /*visibility: visible;
-    opacity: 1;
-    transition: visibility .4s, opacity .4s; */
+    padding: 200px 0 0 0;
 }
 .intro_hide {
     display: none;
-
-    /*visibility: hidden;
-    opacity: 0; */
 }
 .intro__container {
 
@@ -83,7 +77,7 @@ body {
 
 @media (max-width: 840px){
     .intro {
-        padding: 300px 0 200px 0;
+        padding: 200px 0 0 0;
     }
     .intro__title {
         font-size: 50px;
@@ -98,7 +92,7 @@ body {
 
 @media (max-width: 475px){
     .intro {
-        padding: 200px 0 200px 0;
+        padding: 150px 0 0 0;
     }
     .intro__title {
         font-size: 40px;
@@ -113,7 +107,7 @@ body {
 
 @media (max-width: 388px){
     .intro {
-        padding: 150px 0 150px 0;
+        padding: 100px 0 0 0;
     }
     .intro__title {
         font-size: 30px;
@@ -175,18 +169,12 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 /* CHANGE MATERIALIZE =============*/
 
 .main {
-    display: none;
-    
-    padding: 100px 0 0 0;
+    display: none; 
+    padding: 50px 0 0 0;
 
-    /*visibility: hidden;
-    opacity: 0;
-    transition: visibility .6s, opacity .6s; */
 }
 .main_show {
     display: block;
-    /*visibility: visible;
-    opacity: 1; */
 }
 .main__container {
 
@@ -251,6 +239,9 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 }
 
 @media (max-width: 840px){
+    .main {
+        padding: 30px 0 0 0;
+    }
     .tabs .tab a {
         font-size: 40px;
     }
@@ -260,12 +251,15 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     .form__text {
         font-size: 30px !important;
     }
-    .button-generate{
+    .generate_button{
         font-size: 25px;
     }
 }
 
 @media (max-width: 475px){
+    .main {
+        padding: 25px 0 0 0;
+    }
     .tabs .tab a {
         font-size: 30px;
     }
@@ -275,12 +269,15 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     .form__text {
         font-size: 20px !important;
     }
-    .button-generate{
+    .generate_button{
         font-size: 20px;
     }
 }
 
 @media (max-width: 388px){
+    .main {
+        padding: 20px 0 0 0;
+    }
     .tabs .tab a {
         font-size: 20px;
     }
@@ -290,7 +287,7 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     .form__text {
         font-size: 15px !important;
     }
-    .button-generate{
+    .generate_button{
         font-size: 15px;
     }
 }
@@ -298,18 +295,11 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 
 /* PRINT-BLOCK ============================================================== */
 .print-block {
-    padding: 100px 0 0 0;
+    padding: 20px 0 0 0;
     display: none;
-
-    /* visibility: hidden;
-    opacity: 0;
-    transition: visibility .6s, opacity .6s; */
 }
 .print-block_show {
     display: block;
-
-    /* visibility: visible;
-    opacity: 1; */
 }
 .print-block__container {
 }
@@ -319,12 +309,24 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     font-size: 40px;
     margin: 0 0 20px 0;
 }
+.print-block__row {
+    margin: 0 !important;
+}
 .print-block__text {
     border: 2px solid #000;
     border-radius: 20px;
     font-size: 30px;
     padding: 15px;
     margin: 0 0 20px 0;
+}
+.print-block__subtitle {
+    font-size: 35px;
+}
+.print-block__answer {
+    font-size: 30px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 15px;
 }
 ._hide {
     display: none;
@@ -334,7 +336,13 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     .print-block__title {
         font-size: 40px;
     }
+    .print-block__subtitle {
+        font-size: 35px;
+    }
     .print-block__text {
+        font-size: 30px;
+    }
+    .print-block__answer {
         font-size: 30px;
     }
 }
@@ -343,7 +351,12 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     .print-block__title {
         font-size: 30px;
     }
+    .print-block__subtitle {
+        font-size: 25px;
+    }
     .print-block__text {
+        font-size: 20px;
+    }.print-block__answer {
         font-size: 20px;
     }
 }
@@ -351,9 +364,16 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 @media (max-width: 388px){
     .print-block__title {
         font-size: 25px;
+        margin: 0 0 15px 0;
+    }
+    .print-block__subtitle {
+        font-size: 20px;
     }
     .print-block__text {
         font-size: 15px;
+        margin: 0 0 10px 0;
+    }
+    .print-block__answer {
+        font-size: 15px;
     }
 }
-

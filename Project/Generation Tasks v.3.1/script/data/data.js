@@ -21,20 +21,23 @@ function get_data() {
     data.type_3.count_task = Number.parseInt(document.getElementById('type_3__count_task').value)
     data.choose_generation_answer = document.getElementById('choose_generate_answer').checked
 
-    if (Number.isNaN(data.type_1.count_task)) {
+    if (Number.isNaN(data.type_1.count_task) || data.type_1.count_task === 0) {
         data.type_1.count_task = 0
+        data.type_1.choose_type = false
     } else {
         data.type_1.choose_type = true
     }
 
-    if (Number.isNaN(data.type_2.count_task)) {
+    if (Number.isNaN(data.type_2.count_task) || data.type_2.count_task === 0) {
         data.type_2.count_task = 0
+        data.type_2.choose_type = false
     } else {
         data.type_2.choose_type = true
     }
 
-    if (Number.isNaN(data.type_3.count_task)) {
+    if (Number.isNaN(data.type_3.count_task) || data.type_3.count_task === 0) {
         data.type_3.count_task = 0
+        data.type_3.choose_type = false
     } else {
         data.type_3.choose_type = true
     }

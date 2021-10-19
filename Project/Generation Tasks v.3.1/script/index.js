@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         get_data()
         if (check_data()) {
-            console.log('ok')
+            // Добавить функцию очищения инпутов
             generate()
             transition__main_print_block()
         } else {
