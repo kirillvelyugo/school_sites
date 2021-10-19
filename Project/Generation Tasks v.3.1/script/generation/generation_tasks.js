@@ -19,7 +19,7 @@ function generate() {
         }
     }
 
-    // // Generation 2 type
+    // Generation 2 type
     if (data.type_2.choose_type) {
         document.getElementById('type_2_print-block').classList.remove('_hide');
 

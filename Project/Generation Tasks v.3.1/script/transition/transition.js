@@ -24,4 +24,8 @@ function transition__to_intro() {
     document.getElementById('type_1_insert').innerHTML = ""
     document.getElementById('type_2_insert').innerHTML = ""
     document.getElementById('type_3_insert').innerHTML = ""
+
+    document.getElementById('type_1_print-block').classList.add('_hide');
+    document.getElementById('type_2_print-block').classList.add('_hide');
+    document.getElementById('type_3_print-block').classList.add('_hide');
 }

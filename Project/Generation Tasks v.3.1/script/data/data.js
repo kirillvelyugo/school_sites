@@ -43,6 +43,14 @@ function get_data() {
     }
 }
 
+// Processing inputs
+function clear_input() {
+    console.log('clear')
+    document.getElementById('type_1__count_task').value = ""
+    document.getElementById('type_2__count_task').value = ""
+    document.getElementById('type_3__count_task').value = ""
+}
+
 // Processing data
 function check_data() {
     if (data.type_1.choose_type || data.type_2.choose_type || data.type_3.choose_type) {

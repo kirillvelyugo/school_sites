@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         get_data()
         if (check_data()) {
-            // Добавить функцию очищения инпутов
             generate()
+            clear_input()
             transition__main_print_block()
         } else {
             console.log('Task not choose')
