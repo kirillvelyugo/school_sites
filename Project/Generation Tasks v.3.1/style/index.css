@@ -76,6 +76,21 @@ body {
     background: #0000FF;
 }
 
+@media (max-width: 1390px){
+    .intro {
+        padding: 90px 0 0 0;
+    }
+    .intro__title {
+        font-size: 55px;
+    }
+    .intro__subtitle {
+        font-size: 45px;
+    }
+    .intro__button_blue {
+        font-size: 35px;
+    }
+}
+
 @media (max-width: 840px){
     .intro {
         padding: 200px 0 0 0;
