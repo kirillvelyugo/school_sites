@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Генератор комбинаторных задач</title>
+
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+		rel="stylesheet"> -->
+
+	<link type="text/css" rel="stylesheet" href="./style/materialize.min.css" media="screen,projection" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="./style/index.css">
+
+
+</head>
+
+<body>
+	<div class="content-wrapper" id="wrapper">
+		<div class="container">
+			<div class="intro center-align" id="introPage">
+				<h1>Комбинаторные задачи</h1>
+				<p class="intro__underTitle flow-text">Восьмое задание ЕГЭ</p>
+				<a class="intro__button flow-text" id="introButton">Начать</a>
+
+			</div>
+
+			<div id="slideBar" class="hide">
+				<a href="#" class="title" id="titleInput">Комбинаторные задачи</a>
+				<div class="bar"></div>
+
+				<!-- Прокрутка -->
+				<ul id="tab-slideBar" class="tabs">
+					<li class="tab">
+						<a href="#firstSlide" class="white-text active">Первый тип</a>
+					</li>
+					<li class="tab">
+						<a href="#secondSlide" class="white-text">Второй тип</a>
+					</li>
+					<li class="tab">
+						<a href="#thirdSlide" class="white-text">Третий тип</a>
+					</li>
+				</ul>
+
+
+				<!-- Первый тип задач -->
+				<div id="firstSlide">
+					<div class="row fixed-row flow-text">
+						<div class="col s12 m6 l6 xl6">
+							<div class="exampleTask">
+								<p>Все 4-буквенные слова, составленные из букв К, Л, Р, Т, записаны в алфавитном порядке
+									и
+									пронумерованы.</p>
+								<p>Вот начало списка:</p>
+								<p>1. КККК</p>
+								<p>2. КККЛ</p>
+								<p>3. КККР</p>
+								<p>4. КККТ</p>
+								<p>……</p>
+								<p>Запишите слово, которое стоит на 67-м месте от начала списка. </p>
+							</div>
+						</div>
+						<div class="col s12 m6 l6 xl6">
+
+							<p>Количество задач</p>
+							<input class="inputParameters" type="number" name="" placeholder="Количество"
+								id="countTasksFirstType" min="1" max="100" autocomplete="off">
+
+							<details>
+								<summary><span class="header__input">Дополнительные параметры</span></summary>
+								<div class="bar"></div>
+								<p>Длина слова</p>
+								<input class="inputParameters" type="number" id="minLengthFirstType" placeholder="От"
+									min="3" max="6" autocomplete="off">
+								<input class="inputParameters" type="number" id="maxLengthFirstType" placeholder="До"
+									min="3" max="6" autocomplete="off">
+
+								<p>Количество букв</p>
+								<input class="inputParameters" type="number" id="minCountLettersFirstType"
+									placeholder="От" min="4" max="8" autocomplete="off">
+								<input class="inputParameters" type="number" id="maxCountLettersFirstType"
+									placeholder="До" min="4" max="8" autocomplete="off">
+
+								<p>Место слова</p>
+								<input class="inputParameters" type="number" id="minPlaceWordFirstType" placeholder="От"
+									min="10" max="262144" autocomplete="off">
+								<input class="inputParameters" type="number" id="maxPlaceWordFirstType" placeholder="До"
+									min="10" max="262144" autocomplete="off">
+							</details>
+
+							<div class="row">
+								<div class="col s12 m12 l12 xl12">
+									<div class="choice__button center-align" id="chooseFirstTypeButton">Выбрать этот тип
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div> <!-- row -->
+				</div> <!-- firstSlide -->
+
+				<!-- Второй тип задач -->
+				<div id="secondSlide">
+					<div class="row fixed-row flow-text">
+						<div class="col s12 m6 l6 xl6">
+							<div class="exampleTask">
+								<p>Все 5-буквенные слова, составленные из 5 букв А, К, Л, О, Ш, записаны в алфавитном
+									порядке.
+								</p>
+								<p>Вот начало списка:</p>
+								<p>1. ААААА</p>
+								<p>2. ААААК</p>
+								<p>3. ААААЛ</p>
+								<p>4. ААААО</p>
+								<p>5. ААААШ</p>
+								<p>6. АААКА</p>
+								<p>……</p>
+								<p>На каком месте от начала списка стоит слово ШКОЛА?</p>
+							</div>
+						</div>
+
+						<div class="col s12 m6 l6 xl6">
+
+							<p>Количество задач</p>
+							<input class="inputParameters" type="number" name="" placeholder="Количество"
+								id="countTasksSecondType" min="0" max="100" autocomplete="off">
+
+							<details>
+								<summary><span class="header__input">Дополнительные параметры</span></summary>
+								<div class="bar"></div>
+
+								<p>Длина слова</p>
+								<input class="inputParameters" type="number" name="" id="minLengthSecondType"
+									placeholder="От" min="3" max="6" autocomplete="off">
+								<input class="inputParameters" type="number" name="" id="maxLengthSecondType"
+									placeholder="До" min="3" max="6" autocomplete="off">
+
+								<p>Количество букв</p>
+								<input class="inputParameters" type="number" name="" id="minCountLettersSecondType"
+									placeholder="От" min="4" max="8" autocomplete="off">
+								<input class="inputParameters" type="number" name="" id="maxCountLettersSecondType"
+									placeholder="До" min="4" max="8" autocomplete="off">
+							</details>
+
+							<div class="row">
+								<div class="col s12 m12 l12 xl12">
+									<div class="choice__button center-align" id="chooseSecondTypeButton">Выбрать этот
+										тип
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div> <!-- row -->
+				</div> <!-- secondSlide -->
+
+				<!-- Третий тип задач -->
+				<div id="thirdSlide">
+					<div class="row fixed-row flow-text">
+						<div class="col s12 m6 l6 xl6">
+							<div class="exampleTask">
+								<p>Сколько слов длины 5, начинающихся с гласной буквы, можно составить из букв Е, Г, Э?
+									Каждая
+									буква
+									может входить в слово несколько раз. Слова не обязательно должны быть осмысленными
+									словами
+									русского
+									языка.
+								</p>
+							</div>
+						</div>
+
+						<div class="col s12 m6 l6 xl6">
+
+							<p>Количество задач</p>
+							<input class="inputParameters" type="number" name="" placeholder="Количество"
+								id="countTasksThirdType" min="0" max="100" autocomplete="off">
+
+							<details>
+								<summary><span class="header__input">Дополнительные параметры</span></summary>
+								<div class="bar"></div>
+
+								<p>Длина слова</p>
+								<input class="inputParameters" type="number" name="" id="minLengthThirdType"
+									placeholder="От" min="3" max="6" autocomplete="off">
+								<input class="inputParameters" type="number" name="" id="maxLengthThirdType"
+									placeholder="До" min="3" max="6" autocomplete="off">
+
+								<p>Количество букв</p>
+								<input class="inputParameters" type="number" name="" id="minCountLettersThirdType"
+									placeholder="От" min="2" max="4" autocomplete="off">
+								<input class="inputParameters" type="number" name="" id="maxCountLettersThirdType"
+									placeholder="До" min="2" max="4" autocomplete="off">
+							</details>
+
+							<div>
+								<p>
+									<label>
+										<input type="checkbox" class="filled-in checkbox-white"
+											id="checkGenerateAnswers" />
+										<span class="white-text flow-text">Сгенерировать ответы</span>
+									</label>
+								</p>
+							</div>
+
+							<div class="row">
+								<div class="col s12 m12 l12 xl12">
+									<div class="choice__button center-align" id="chooseThirdTypeButton">Выбрать этот тип
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col s12 m12 l12 xl12">
+									<div class="choice__button center-align" id="doGenerateButton">Сгенерировать</div>
+								</div>
+							</div>
+						</div>
+
+					</div> <!-- row -->
+				</div> <!-- thirdSlide -->
+
+			</div> <!-- slideBar -->
+
+			<div class="result hide" id="resultPage">
+				<a href="#" class="title" id="titleResult">Комбинаторные задачи</a>
+				<div class="bar"></div>
+				<div id="tasks" class="flow-text">
+
+					<div id="resultFirstType" class="resultBlock hide">
+						<h4>Первый тип:</h4>
+						<div class="bar"></div>
+						<div class="row">
+
+						</div>
+					</div>
+
+					<div id="resultSecondType" class="resultBlock hide">
+						<h4>Второй тип:</h4>
+						<div class="bar"></div>
+						<div class="row">
+
+						</div>
+					</div>
+
+					<div id="resultThirdType" class="resultBlock hide">
+						<h4>Третий тип:</h4>
+						<div class="bar"></div>
+						<div id="thirdTasks" class="row fixed-row">
+
+						</div>
+					</div>
+					<!-- 
+					<div id="answers">
+
+					</div> -->
+
+				</div>
+			</div> <!-- result div -->
+
+
+		</div> <!-- container -->
+	</div> <!--  content-wrapper -->
+
+	<script type="text/javascript" src="./script/framework/materialize.min.js"></script>
+
+	<script type="text/javascript" src="./script/generation/generationTasks.js"></script>
+	<script type="text/javascript" src="./script/generation/generationTexts.js"></script>
+	<script type="text/javascript" src="./script/generation/generationAnswers.js"></script>
+
+	<script type="text/javascript" src="./script/getData.js"></script>
+	<script type="text/javascript" src="./script/transition.js"></script>
+
+	<script type="text/javascript" src="./script/index.js"></script>
+</body>
+
+</html>

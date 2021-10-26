@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background: #2994ff;
+    color: #fff;
+}
+
+body, html {
+    height: 100%;
+}
+
+.fixed-row {
+    margin-bottom: 20px;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+.content-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-transform: uppercase;
+    
+    margin: 0;
+}
+ 
+.intro__button {
+    border: 2px solid #fff;
+    color: #fff; 
+    background: #1c8af9;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    padding: 5px 10px; 
+    margin-top: 5px;
+    display: inline-block;
+
+    transition: background .2s linear, color .2s linear;
+}
+
+.intro__button:hover {
+	color: #1c8af9;
+	background: #fff;
+
+    cursor: pointer;
+}
+
+.title {
+    color: #fff;
+	text-decoration: none;
+	font-size: 25px;
+	text-transform: uppercase;
+
+}
+
+.tabs {
+    background: #2994ff;
+    font-weight: bold; 
+
+    margin-bottom: 10px;
+}
+
+.exampleTask {
+    border: solid 2px #fff;
+    background: #1c8af9;
+
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.header__input {
+    text-transform: uppercase;
+}
+
+summary {
+    outline: 0;
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
+.bar {
+    height: 2px;
+    background: #fff;
+
+    margin: 2px 0 5px 0;
+}
+
+.inputParameters {
+    color: #fff;
+    border: solid 2px #fff !important;
+    background: #1c8af9 !important;
+
+    width: 40% !important;
+    
+    padding-left: 5px !important;
+    margin: 2px 5px 8px 0px !important;    
+}
+
+.choice__button {
+    border: 2px solid #fff;
+    color: #fff; 
+    background: #1c8af9;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    width: 100%;
+    padding: 5px 10px; 
+    margin-top: 5px;
+    display: inline-block;
+
+    transition: background .2s linear, color .2s linear;
+}
+
+.choice__button:hover {
+	color: #1c8af9;
+	background: #fff;
+
+    cursor: pointer;
+}
+
+.active__button {
+    border: 2px solid #fff;
+    color:#1c8af9; 
+    background: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    width: 100%;
+    padding: 5px 10px; 
+    margin-top: 5px;
+    display: inline-block;
+
+    transition: background .2s linear, color .2s linear;
+}
+
+.task {
+    border: solid 2px #fff;
+    background: #1c8af9;
+
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.checkbox-white[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    border: 2px solid #fff;
+    background-color: #1c8af9;
+}

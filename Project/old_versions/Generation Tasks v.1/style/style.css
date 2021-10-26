@@ -1,0 +1,42 @@
+body {
+	font-size: 14px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.parameters {
+	width: 33%;
+	margin: 0; 
+}
+
+.example {
+	background: #d2d2d2;
+	border: 1px dashed;
+
+	margin-bottom: 15px;
+	margin-top: 5px;
+	padding: .5%;
+	width: 70%;
+	
+	font-size: 14px;
+	font-style: italic;
+}
+
+button {
+	margin-top: 10px;
+}
+
+.attention {
+	color: red;
+}
+
+.resultTask {
+	width: 50%;
+	border: 1px solid #000;
+	background: #d2d2d2;
+	padding: .5%;
+	margin-top: 5px;
+}
